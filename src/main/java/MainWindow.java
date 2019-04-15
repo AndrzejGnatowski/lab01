@@ -12,10 +12,9 @@ public class MainWindow extends JFrame {
     private JTextField textFieldName;
 
     public MainWindow() {
-        this.setSize(599, 500);
+        this.setSize(600, 500);
         this.setContentPane(niceWindowView);
         buttonAddNewPerson.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 try{
                     Person person = new Person();

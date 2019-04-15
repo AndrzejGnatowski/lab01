@@ -9,5 +9,11 @@
         <module name="lab01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="lab01" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
+<!--  <component name="JavacSettings">-->
+<!--    <option name="ADDITIONAL_OPTIONS_STRING" value="&#45;&#45;enable-preview" />-->
+<!--  </component>-->
 </project>
