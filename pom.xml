@@ -45,7 +45,6 @@
                                 App
                             </mainClass>
                         </manifest>
-<!--                        <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>-->
                     </archive>
                 </configuration>
             </plugin>
@@ -54,10 +53,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-<!--                    <release>1.8</release>-->
                     <source>1.8</source>
                     <target>1.8</target>
-<!--                    <compilerArgs>&#45;&#45;enable-preview</compilerArgs>-->
                 </configuration>
             </plugin>
             <plugin>

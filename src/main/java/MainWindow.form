@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainWindow">
-  <grid id="27dc6" binding="niceWindowView" layout-manager="FormLayout">
+  <grid id="27dc6" binding="panelMain" layout-manager="FormLayout">
     <rowspec value="top:d:noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="center:d:noGrow"/>
@@ -8,6 +8,8 @@
     <rowspec value="center:d:noGrow"/>
     <rowspec value="top:4dlu:noGrow"/>
     <rowspec value="top:d:grow"/>
+    <rowspec value="top:6dlu:noGrow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
     <colspec value="fill:300px:grow"/>
     <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:m:noGrow"/>
@@ -89,8 +91,8 @@
       </component>
       <component id="bfc41" class="javax.swing.JButton" binding="buttonAddNewPerson">
         <constraints>
-          <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
-          <forms/>
+          <grid row="6" column="2" row-span="2" col-span="3" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
         </constraints>
         <properties>
           <text value="Add person"/>
@@ -98,7 +100,7 @@
       </component>
       <scrollpane id="3348e">
         <constraints>
-          <grid row="0" column="0" row-span="7" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="8" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <forms defaultalign-horz="false" defaultalign-vert="false"/>
         </constraints>
         <properties/>

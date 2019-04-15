@@ -3,17 +3,18 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainWindow extends JFrame {
+class MainWindow extends JFrame {
     private JTable tablePeople;
     private JTextField textFieldSurname;
     private JTextField textFieldAge;
-    private JPanel niceWindowView;
+    private JPanel panelMain;
     private JButton buttonAddNewPerson;
     private JTextField textFieldName;
 
-    public MainWindow() {
+    MainWindow() {
         this.setSize(600, 500);
-        this.setContentPane(niceWindowView);
+        this.setTitle("Platformy programistyczne .Net i Java, labolatorium, Java, lab01");
+        this.setContentPane(panelMain);
         buttonAddNewPerson.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 try{
@@ -23,7 +24,7 @@ public class MainWindow extends JFrame {
                     person.setAge(Integer.parseInt(textFieldAge.getText()));
                     addPersonToList(person);
                 } catch(NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(niceWindowView, "Wrong age passed.");
+                    JOptionPane.showMessageDialog(panelMain, "Wrong age passed.");
                 }
             }
         });
